@@ -175,15 +175,73 @@ Dispositivo 3 ligado. Energia restante: 400
 
 Dispositivo 4 não pode ser ligado. Energia insuficiente.
 
-D)
-Dispositivo 1 ligado. Energia restante: 900
+**D) Dispositivo 1 ligado. Energia restante: 900**
 
-Dispositivo 2 ligado. Energia restante: 300
+**Dispositivo 2 ligado. Energia restante: 300**
 
-Dispositivo 3 ligado com bateria extra. Energia restante: 200
+**Dispositivo 3 ligado com bateria extra. Energia restante: 200**
 
-Dispositivo 4 não pode ser ligado. Energia insuficiente.
+**Dispositivo 4 não pode ser ligado. Energia insuficiente.**
 
-Dispositivo 5 não pode ser ligado. Energia insuficiente.
+**Dispositivo 5 não pode ser ligado. Energia insuficiente.**
 
+**Resposta:** Alternativa D
+______
+**5)** Qual é a principal função do método update() em um jogo desenvolvido com Phaser.js?
+
+Escolha a opção que melhor descreve seu propósito:
+
+A) O método update() é responsável por carregar os assets do jogo antes da cena ser exibida.
+
+**B) O método update() é chamado continuamente a cada quadro (frame) do jogo, sendo usado para atualizar a lógica, movimentação e interações dos objetos na cena.**
+
+C) O método update() renderiza todos os sprites na tela e garante que a física do jogo seja processada corretamente.
+
+D) O método update() é chamado apenas uma vez após a criação da cena, sendo utilizado para configurar variáveis iniciais do jogo.
+
+**Resposta:** Alternativa B
+______
+**6)** Qual é o principal objetivo do módulo Matter.js Physics em Phaser.js?
+
+Escolha a opção que responde corretamente:
+
+**A) Simular física avançada, incluindo corpos rígidos, colisões complexas e interação entre objetos com gravidade e forças.**
+
+B) Gerenciar eventos de entrada do usuário, como cliques e toques na tela, permitindo movimentação de personagens.
+
+C) Renderizar gráficos otimizados para jogos 2D e garantir uma taxa de quadros estável.
+
+D) Criar animações automáticas para sprites e objetos interativos sem necessidade de programação de movimentação.
+
+**Resposta:** Alternativa A
+
+**Justificativa:** O Matter. JS Physics permite criar jogos e simulações com comportamentos físicos precisos e realistas. Fornecendo um sistema de física realista e altamente configurável para simular interações físicas complexas entre os objetos.
+______
+**7)** Uma loja online deseja implementar um sistema de classificação de pedidos com base no valor total da compra. O sistema deve determinar a categoria de um pedido com as seguintes regras:
+
+```
+
+Pedidos abaixo de R$50,00 → "Frete não disponível!"
+
+Pedidos entre R$50,00 e R$199,99 (inclusive) → "Frete com custo adicional!"
+
+Pedidos de R$200,00 ou mais → "Frete grátis!"
+```
+Implemente um pseudocódigo que receba o valor total da compra e exiba a classificação correta do frete para o cliente.
+
+**Resposta:**
+```
+Início
+    Declare o valor_do_pedido
+    Leia o valor_do_pedido
+
+    Se o valor_do _pedido < 50.00 então
+        Escreva "Frete não disponível!"
+    Senão se valor_do_pedido >= 50.00 E valor_do_pedido <= 199.99 então
+        Escreva "Frete com custo adicional!"
+    Senão
+        Escreva "Frete grátis!"
+    Fim Se
+Fim
+```
 ______
