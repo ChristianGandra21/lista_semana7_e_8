@@ -262,6 +262,54 @@ Método CalcularConsumo():
 ```
 Implementação genérica para cálculo de consumo, a ser sobrescrita pelas subclasses.
 Agora, implemente as classes Carro e Moto, garantindo que ambas herdem de Veiculo e possuam métodos específicos para calcular o consumo de combustível com base na quilometragem e eficiência do veículo.
+
+```
+CLASSE Veiculo
+    ATRIBUTOS:
+        modelo
+        ano
+    
+    MÉTODO Construtor(modelo, ano)
+        ESTE.modelo <- modelo
+        ESTE.ano <- ano
+    
+    MÉTODO CalcularConsumo()
+        EXIBIR "Cálculo genérico do consumo de combustível."
+FIM CLASSE
+
+CLASSE Carro EXTENDS Veiculo
+    ATRIBUTOS:
+        eficiencia 
+
+    MÉTODO Construtor(modelo, ano, eficiencia)
+        SUPER(modelo, ano)
+        ESTE.eficiencia <- eficiencia
+    
+    MÉTODO CalcularConsumo(distancia)
+        SE (eficiencia > 0) ENTÃO
+            consumo <- distancia
+            RETORNAR consumo
+        SENÃO
+            EXIBIR "Eficiência inválida para o carro."
+FIM CLASSE
+
+// Classe derivada Moto
+CLASSE Moto EXTENDS Veiculo
+    ATRIBUTOS:
+        eficiencia // km por litro
+    
+    MÉTODO Construtor(modelo, ano, eficiencia)
+        SUPER(modelo, ano)
+        ESTE.eficiencia <- eficiencia
+    
+    MÉTODO CalcularConsumo(distancia)
+        SE (eficiencia > 0) ENTÃO
+            consumo <- distancia / eficiencia
+            RETORNAR consumo
+        SENÃO
+            EXIBIR "Eficiência inválida para a moto."
+FIM CLASSE
+````
 ______
 
 **9)** Você é um cientista da NASA e está ajudando no desenvolvimento de um sistema de pouso para sondas espaciais em Marte. Seu objetivo é calcular o tempo necessário para que a sonda reduza sua velocidade até um nível seguro para pouso, considerando uma velocidade inicial de entrada na atmosfera marciana e uma taxa de desaceleração constante causada pelo atrito atmosférico e retrofoguetes.
