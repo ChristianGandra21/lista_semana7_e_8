@@ -255,7 +255,7 @@ Atributos:
 
 modelo
 ano
-Método Construtor(modelo, ano):
+Método Construtor(modelo, ano,):
 
 Define os valores dos atributos modelo e ano com os valores passados como parâmetro.
 Método CalcularConsumo():
@@ -279,35 +279,31 @@ FIM CLASSE
 
 CLASSE Carro EXTENDS Veiculo
     ATRIBUTOS:
-        eficiencia 
+        eficiencia
 
     MÉTODO Construtor(modelo, ano, eficiencia)
         SUPER(modelo, ano)
         ESTE.eficiencia <- eficiencia
+        ESTE.distanciaPercorrida <- distanciaPercorrida
     
-    MÉTODO CalcularConsumo(distancia)
-        SE (eficiencia > 0) ENTÃO
-            consumo <- distancia
-            RETORNAR consumo
-        SENÃO
-            EXIBIR "Eficiência inválida para o carro."
+    MÉTODO CalcularConsumo(distanciaPercorrida
+         consumo <- distanciaPercorrida / eficiencia
+         RETORNAR consumo
 FIM CLASSE
 
-// Classe derivada Moto
 CLASSE Moto EXTENDS Veiculo
     ATRIBUTOS:
-        eficiencia // km por litro
+        eficiencia
     
     MÉTODO Construtor(modelo, ano, eficiencia)
         SUPER(modelo, ano)
         ESTE.eficiencia <- eficiencia
     
-    MÉTODO CalcularConsumo(distancia)
+    MÉTODO CalcularConsumo(distanciaPercorrida)
         SE (eficiencia > 0) ENTÃO
-            consumo <- distancia / eficiencia
+            consumo <- distanciaPercorrida / eficiencia
             RETORNAR consumo
-        SENÃO
-            EXIBIR "Eficiência inválida para a moto."
+
 FIM CLASSE
 ````
 ______

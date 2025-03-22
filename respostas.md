@@ -245,3 +245,92 @@ Início
 Fim
 ```
 ______
+**8)** Considere a implementação da classe base Veiculo em um sistema de modelagem de veículos. Sua tarefa é implementar, utilizando pseudocódigo, as classes derivadas Carro e Moto, que herdam da classe Veiculo, adicionando atributos específicos e métodos para calcular o consumo de combustível de um carro e de uma moto, respectivamente.
+
+```
+Classe Veiculo:
+Atributos:
+
+modelo
+ano
+Método Construtor(modelo, ano,):
+
+Define os valores dos atributos modelo e ano com os valores passados como parâmetro.
+Método CalcularConsumo():
+```
+Implementação genérica para cálculo de consumo, a ser sobrescrita pelas subclasses.
+Agora, implemente as classes Carro e Moto, garantindo que ambas herdem de Veiculo e possuam métodos específicos para calcular o consumo de combustível com base na quilometragem e eficiência do veículo.
+
+```
+CLASSE Veiculo
+    ATRIBUTOS:
+        modelo
+        ano
+    
+    MÉTODO Construtor(modelo, ano)
+        ESTE.modelo <- modelo
+        ESTE.ano <- ano
+    
+    MÉTODO CalcularConsumo()
+        EXIBIR "Cálculo genérico do consumo de combustível."
+FIM CLASSE
+
+CLASSE Carro EXTENDS Veiculo
+    ATRIBUTOS:
+        eficiencia
+
+    MÉTODO Construtor(modelo, ano, eficiencia)
+        SUPER(modelo, ano)
+        ESTE.eficiencia <- eficiencia
+        ESTE.distanciaPercorrida <- distanciaPercorrida
+    
+    MÉTODO CalcularConsumo(distanciaPercorrida
+         consumo <- distanciaPercorrida / eficiencia
+         RETORNAR consumo
+FIM CLASSE
+
+CLASSE Moto EXTENDS Veiculo
+    ATRIBUTOS:
+        eficiencia
+    
+    MÉTODO Construtor(modelo, ano, eficiencia)
+        SUPER(modelo, ano)
+        ESTE.eficiencia <- eficiencia
+    
+    MÉTODO CalcularConsumo(distanciaPercorrida)
+        SE (eficiencia > 0) ENTÃO
+            consumo <- distanciaPercorrida / eficiencia
+            RETORNAR consumo
+
+FIM CLASSE
+````
+______
+**9)** Você é um cientista da NASA e está ajudando no desenvolvimento de um sistema de pouso para sondas espaciais em Marte. Seu objetivo é calcular o tempo necessário para que a sonda reduza sua velocidade até um nível seguro para pouso, considerando uma velocidade inicial de entrada na atmosfera marciana e uma taxa de desaceleração constante causada pelo atrito atmosférico e retrofoguetes.
+
+Entretanto, a sonda não pode ultrapassar um tempo máximo de descida para evitar desvios orbitais, nem pode desacelerar além de um limite mínimo, pois isso poderia causar instabilidade no pouso.
+
+Implemente a lógica dessa simulação em pseudocódigo, considerando a seguinte equação para atualização da velocidade:
+
+Considere a fórumla de atualização velocidade:
+```
+    velocidade = velocidadeInicial - desaceleracao * tempo
+```
+Seu programa deve determinar quanto tempo será necessário para que a sonda atinja uma velocidade segura de pouso, sem ultrapassar os limites estabelecidos.
+
+```
+Início
+   Declare velocidadeInicial, desaceleracao, velocidadeSegura, tempoMaximo, tempo, velocidadeAtual
+   
+
+    Enquanto velocidadeAtual > velocidadeSegura E tempo <= tempoMaximo faça
+    velocidadeAtual = velocidadeInicial - desaceleracao * tempo
+    tempo = tempo + 1
+    Fim Enquanto
+
+    Se velocidadeAtual <= velocidadeSegura então
+    Escreva "Tempo necessário para pouso seguro:", tempo, "segundos."
+    Senão
+    Escreva "Tempo máximo de descida excedido! Pouso inseguro."
+    Fim
+```
+______
