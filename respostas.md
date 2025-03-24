@@ -31,6 +31,8 @@ C) O código avalia a expressão booleana, imprime `true` e, em seguida, verific
 D) O código avalia a expressão booleana, imprime `false` e ordena os valores em ordem crescente.
 
 **Resposta:** Alternativa A
+
+**Justificativa:** O código avalia a expressão booleana dos resultados, já que é verdadeira, imprime true, após isso calcula o produto dos valores da lista e imprime o resultado no console.
 ______
 
 **2)** O código a seguir contém duas funções que calculam o limite de crédito de um cliente com base nos seus gastos e na renda mensal.
@@ -93,6 +95,8 @@ C) analisarCredito1() exibirá: 'Seu crédito foi negado. Saldo disponível: -20
 D) Ambas as funções exibirão: 'Seu crédito foi aprovado Saldo disponível: 500.'
 
 **Resposta:** Alternativa A
+
+**Justificativa:** As duas funções implementam a mesma lógica de acumulação de valores, diferenciando-se apenas na estrutura de repetição utilizada (do-while vs while). Assim, produzem exatamente o mesmo resultado: 400. 
 ______
 **3)** Considere o seguinte trecho de código em JavaScript:
 ```javascript
@@ -118,6 +122,8 @@ C) O código verifica se a idade está entre 18 e 60 anos e, se for, imprime "Vo
 **D) O código verifica se a idade é menor de 18, entre 18 e 60 ou acima de 60, imprimindo uma mensagem específica para cada caso.**
 
 **Resposta:** Alternativa D
+
+**Justificativa:** O código verifica três faixas numéricas distintas (menor de 18, entre 18-59, e 60+) e exibe mensagens específicas para cada caso, cobrindo todas as possibilidades de idades.
 ______
 **4)** Qual será o resultado impresso no console após a execução do seguinte código?
 ```javascript
@@ -200,6 +206,8 @@ C) O método update() renderiza todos os sprites na tela e garante que a física
 D) O método update() é chamado apenas uma vez após a criação da cena, sendo utilizado para configurar variáveis iniciais do jogo.
 
 **Resposta:** Alternativa B
+
+**Justificativa:** o método update() no Phaser é um loop que executa continuamente a cada frame do jogo, sendo especificamente projetado para atualizar em tempo real as dinâmicas.
 ______
 **6)** Qual é o principal objetivo do módulo Matter.js Physics em Phaser.js?
 
