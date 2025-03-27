@@ -269,6 +269,8 @@ Método CalcularConsumo():
 Implementação genérica para cálculo de consumo, a ser sobrescrita pelas subclasses.
 Agora, implemente as classes Carro e Moto, garantindo que ambas herdem de Veiculo e possuam métodos específicos para calcular o consumo de combustível com base na quilometragem e eficiência do veículo.
 
+**Resposta:**
+
 ```
 CLASSE Veiculo
     ATRIBUTOS:
@@ -324,6 +326,8 @@ Considere a fórumla de atualização velocidade:
     velocidade = velocidadeInicial - desaceleracao * tempo
 ```
 Seu programa deve determinar quanto tempo será necessário para que a sonda atinja uma velocidade segura de pouso, sem ultrapassar os limites estabelecidos.
+
+**Resposta:**
 
 ```
 Início
