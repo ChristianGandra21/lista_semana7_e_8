@@ -346,3 +346,31 @@ Início
     Fim
 ```
 ______
+
+**10)** Em um sistema de análise financeira, as operações de investimento de uma empresa podem ser representadas por matrizes, onde cada linha representa um tipo de investimento e cada coluna representa um período de tempo.
+
+A seguir, é fornecida a implementação da função SomarMatrizesInvestimento(matrizA, matrizB), que soma os valores de duas matrizes de investimento. Sua tarefa é implementar uma função semelhante, porém que realize a multiplicação das matrizes de investimento, determinando como os investimentos afetam os resultados ao longo do tempo.
+Agora, implemente a função MultiplicarMatrizesInvestimento(matrizA, matrizB), que multiplica as duas matrizes, simulando o efeito de diferentes fatores de crescimento e impacto financeiro nos investimentos ao longo do tempo.
+
+**Resposta:**
+```
+Função MultiplicarMatrizesInvestimento(matrizA, matrizB):  
+    # Verifica se o número de colunas da matrizA é igual ao número de linhas da matrizB  
+    Se tamanho(matrizA[0]) ≠ tamanho(matrizB) então:  
+        Retornar "As matrizes não podem ser multiplicadas. Dimensões incompatíveis."  
+    Senão:  
+        linhasA <- tamanho(matrizA)  
+        colunasA <- tamanho(matrizA[0])  
+        colunasB <- tamanho(matrizB[0])  
+        matrizResultado <- novaMatriz(linhasA, colunasB)  
+
+        # Loop para percorrer cada célula da matriz resultado  
+        Para i de 0 até linhasA - 1 faça:  
+            Para j de 0 até colunasB - 1 faça:  
+                soma <- 0  
+                Para k de 0 até colunasA - 1 faça:  
+                    soma <- soma + (matrizA[i][k] * matrizB[k][j])  
+                matrizResultado[i][j] <- soma  
+
+        Retornar matrizResultado  
+```
