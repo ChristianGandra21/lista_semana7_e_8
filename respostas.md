@@ -192,6 +192,8 @@ Dispositivo 4 não pode ser ligado. Energia insuficiente.
 **Dispositivo 5 não pode ser ligado. Energia insuficiente.**
 
 **Resposta:** Alternativa D
+
+**Justificativa:** O código prioriza o uso da energia principal primeiro. Quando ela é insuficiente, recorre à combinação de energia principal + bateria extra. A mensagem "Energia insuficiente" só aparece quando o consumo excede ambos os recursos disponíveis.
 ______
 **5)** Qual é a principal função do método update() em um jogo desenvolvido com Phaser.js?
 
